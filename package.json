@@ -1,0 +1,16 @@
+{
+    "name": "hh-test-pagination-main",
+    "version": "1.0.0",
+    "scripts": {
+        "dev": "concurrently \"npm run dev --prefix web\" \"npm run start:dev --prefix srv\"",
+        "install-all": "npm i && npm i --prefix web && npm i --prefix srv",
+        "build": "npm run build --prefix web && npm run build --prefix srv",
+        "start": "concurrently \"npm start --prefix web\" \"npm run start:prod --prefix srv\""
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "concurrently": "^8.2.2"
+    }
+}
